@@ -5,5 +5,11 @@
     <string name="email">Email:</string>
     <string name="password">Password:</string>
     <string name="login">Masuk</string>
+    <string name="logout">Keluar</string>
+    <string name="change_password">Ganti Password</string>
+    <string name="dummy_name">Cornelia Vanisa</string>
+    <string name="dummy_email">cornelia.vanisa@bangkit.acedmy</string>
+    <string name="dummy_instansi">Dinas Sosial</string>
+    <string name="dummy_nip">19850723 200502 2 001</string>
 
 </resources>

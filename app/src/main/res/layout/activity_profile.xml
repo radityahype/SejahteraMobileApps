@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.profile.ProfileActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/background_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        card_view:cardCornerRadius="23dp"
+        card_view:cardBackgroundColor="@color/background_card">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                card_view:shapeAppearanceOverlay="@style/circular"
+                android:padding="5dp"
+                tools:srcCompat="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/plusjakartasans_bold"
+                android:text="@string/dummy_name"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:text="@string/dummy_email"
+                />
+            <TextView
+                android:id="@+id/instansi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:text="@string/dummy_instansi"/>
+
+            <TextView
+                android:id="@+id/nip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:text="@string/dummy_nip" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:backgroundTint="@color/button_bg"
+        android:fontFamily="@font/plusjakartasans_regular"
+        android:text="@string/logout"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/button_bg"
+        android:fontFamily="@font/plusjakartasans_regular"
+        android:text="@string/change_password"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
