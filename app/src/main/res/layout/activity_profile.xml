@@ -30,6 +30,7 @@
                 android:layout_marginTop="55dp"
                 card_view:shapeAppearanceOverlay="@style/circular"
                 android:padding="5dp"
+                android:src="@drawable/avatar"
                 tools:srcCompat="@drawable/avatar" />
 
             <TextView
@@ -74,8 +75,7 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:textStyle="italic"
-                android:fontFamily="@font/plusjakartasans_regular"
+                android:fontFamily="@font/plusjakartasans_italic"
                 android:text="@string/dummy_nip" />
 
 
