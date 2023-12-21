@@ -30,8 +30,7 @@
                 android:layout_marginTop="55dp"
                 card_view:shapeAppearanceOverlay="@style/circular"
                 android:padding="5dp"
-                android:src="@drawable/avatar"
-                tools:srcCompat="@drawable/avatar" />
+                tools:src="@tools:sample/avatars"  />
 
             <TextView
                 android:id="@+id/name"
