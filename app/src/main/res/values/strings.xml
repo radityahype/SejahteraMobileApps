@@ -41,5 +41,18 @@
     <string name="mari_bantu_mereka">Mari bantu mereka</string>
     <string name="mendapatkan_kesejahteraan">mendapatkan kesejahteraan</string>
     <string name="mulai_survey">Mulai Survey > </string>
+    <string name="hasil_rekomendasi_bantuan">Hasil Rekomendasi Bantuan</string>
+    <string name="kategori">Kategori</string>
+    <string name="hasil">Hasil</string>
+    <string name="line_break">line break</string>
+    <string name="penerima_bnpt">Penerima BNPT</string>
+    <string name="ya">Ya</string>
+    <string name="penerima_bpum">Penerima BPUM</string>
+    <string name="tidak">Tidak</string>
+    <string name="penerima_bst">Penerima BST</string>
+    <string name="penerima_pkh">Penerima PKH</string>
+    <string name="penerima_sembako">Penerima SEMBAKO</string>
+    <string name="penerima_prakerja">Penerima Prakerja</string>
+    <string name="penerima_kur">Penerima KUR</string>
 
 </resources>
