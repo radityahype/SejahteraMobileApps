@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".ui.form.SurveiForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/nama_kepala_keluarga"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="40dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/namaKKEditTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:hint="@string/masukkan_nama_kepala_keluarga">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nama_kk"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/background_input"
+                    android:ems="10"
+                    android:fontFamily="@font/plusjakartasans_regular"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/nik"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="14dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nikEditTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:hint="@string/masukkan_nik">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/background_input"
+                    android:ems="10"
+                    android:fontFamily="@font/plusjakartasans_regular"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/jenis_kepala_keluarga"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="14dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_kelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/pekerjaan_kepala_keluarga"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_pekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/status_pekerjaan"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_status_pekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/status_pendidikan"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_status_pendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/status_kawin"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_status_kawin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/kepemilikan_tempat_tinggal"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_tempat_tinggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/memiliki_simpanan"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_simpanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/jenis_atap"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_jenis_atap"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/kualitas_atap"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_kualitas_atap"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/jenis_tembok"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_jenis_tembok"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/kualitas_tembok"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_kualitas_tembok"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/jenis_lantai"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_jenis_lantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/kualitas_lantai"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_kualitas_lantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/sumber_penerangan"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_sumber_penerangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/daya_listrik_terpasang"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_daya_listrik"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/bahan_bakar_memasak"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_bahan_bakar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/sumber_air_minum"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_sumber_air"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/fasilitas_bab"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_fasilitas_bab"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text= "@string/resiko_stunting"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:textStyle="bold"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="2dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukkan_jenis_kelamin_kepala_keluarga"
+                app:hintEnabled="false"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_resiko_stunting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@color/background_input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/button_bg"
+                android:fontFamily="@font/plusjakartasans_regular"
+                android:text="@string/submit"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -11,5 +11,30 @@
     <string name="dummy_email">cornelia.vanisa@bangkit.acedmy</string>
     <string name="dummy_instansi">Dinas Sosial</string>
     <string name="dummy_nip">19850723 200502 2 001</string>
+    <string name="nama_kepala_keluarga">Nama Kepala Keluarga:</string>
+    <string name="masukkan_nama_kepala_keluarga">Masukkan Nama Kepala Keluarga</string>
+    <string name="nik">NIK:</string>
+    <string name="masukkan_nik">Masukkan NIK</string>
+    <string name="jenis_kepala_keluarga">Jenis Kelamin Kepala Keluarga:</string>
+    <string name="masukkan_jenis_kelamin_kepala_keluarga">Masukkan Jenis Kelamin</string>
+    <string name="pekerjaan_kepala_keluarga">Pekerjaan Kepala Keluarga:</string>
+    <string name="status_pekerjaan">Status Pekerjaan:</string>
+    <string name="status_pendidikan">Status Pendidikan:</string>
+    <string name="status_kawin">Status Kawin:</string>
+    <string name="kepemilikan_tempat_tinggal">Kepemilikan Tempat Tinggal:</string>
+    <string name="memiliki_simpanan">Memiliki Simpanan:</string>
+    <string name="jenis_atap">Jenis Atap:</string>
+    <string name="kualitas_atap">Kualitas Atap:</string>
+    <string name="jenis_tembok">Jenis Tembok:</string>
+    <string name="kualitas_tembok">Kualitas Tembok:</string>
+    <string name="jenis_lantai">Jenis Lantai:</string>
+    <string name="kualitas_lantai">Kualitas Lantai:</string>
+    <string name="sumber_penerangan">Sumber Penerangan:</string>
+    <string name="daya_listrik_terpasang">Daya Listrik Terpasang:</string>
+    <string name="bahan_bakar_memasak">Bahan Bakar Memasak:</string>
+    <string name="sumber_air_minum">Sumber Air Minum:</string>
+    <string name="fasilitas_bab">Fasilitas BAB:</string>
+    <string name="resiko_stunting">Resiko Stunting:</string>
+    <string name="submit">Submit</string>
 
 </resources>
