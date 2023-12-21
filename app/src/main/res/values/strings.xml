@@ -36,5 +36,10 @@
     <string name="fasilitas_bab">Fasilitas BAB:</string>
     <string name="resiko_stunting">Resiko Stunting:</string>
     <string name="submit">Submit</string>
+    <string name="selamat_datang">Selamat Datang,</string>
+    <string name="cornelia_vanisa">Cornelia Vanisa</string>
+    <string name="mari_bantu_mereka">Mari bantu mereka</string>
+    <string name="mendapatkan_kesejahteraan">mendapatkan kesejahteraan</string>
+    <string name="mulai_survey">Mulai Survey > </string>
 
 </resources>
