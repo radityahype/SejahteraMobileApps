@@ -54,5 +54,8 @@
     <string name="penerima_sembako">Penerima SEMBAKO</string>
     <string name="penerima_prakerja">Penerima Prakerja</string>
     <string name="penerima_kur">Penerima KUR</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="profil">Profil</string>
 
 </resources>
